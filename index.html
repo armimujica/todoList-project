@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora&family=Nanum+Gothic&family=Playfair+Display:ital@1&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
+<link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora&family=Nanum+Gothic&family=Playfair+Display:ital@1&family=Roboto:wght@100;300&display=swap"
+    rel="stylesheet">
+
 <body>
 
-    <img class="bgk-body" src="./img/bgk-body.png" alt="">
-    <nav>
-        <div class="logoContainer">
-            <p class="logo">To Do's </p>
-        </div>
-        <ul class="nav justify-content-center">
-<li class="nav-item">
-              <a class="nav-link active" href="#">main</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ongoing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">archive</a>
-            </li>
-          </ul>
+  <img class="bgk-body" src="./img/bgk-body.png" alt="">
+  <nav>
+    <div class="logoContainer">
+      <p class="logo">To Do's </p>
+    </div>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">main</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ongoing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">archive</a>
+      </li>
+    </ul>
+
+    </ul>
+
+  </nav>
+  <main>
+
+    <div class="container">
+
+      <form class="inputContainer">
+        <label for="input">To do's</label>
+        <br>
+        <input type="text" name="title" id="book-title" placeholder="What do you have in mind?" />
+        <button>Add</button>
+      </form>
+
+      <!-- FUN BUTTONS  -->
+      <ul class="funButtons">
+        <li class="icon edit">
+          <span class="tooltip">Edit</span>
+          <span><i class="edit"></i></span>
+        </li>
+        <li class="icon delete">
+          <span class="tooltip">Delete</span>
+          <span><i class="edit"></i></span>
+        </li>
 
       </ul>
+<!-- FUN BUTTONS  -->
 
-    </nav>
-    <main>
+    </div>
+<!-- ENDOF PARENT CONTAINER  -->
+  </main>
 
-        <div class="container">
-
-          <form id="input">
-            <label for="input">Title:</label>
-            <input
-              type="text"
-              name="title"
-              id="book-title"
-              placeholder="Enter book title"
-            />
-            <button>Add</button>
-            <ul class="wrapper">
-    <li class="icon edit">
-        <span class="tooltip">Edit</span>
-        <span><i class="edit"></i></span>
-    </li>
-    <li class="icon delete">
-        <span class="tooltip">Delete</span>
-        <span><i class="edit"></i></span>
-    </li>
-
-</ul>
-          </form>
-          
-        </div>
-
-    </main>
-
-    <footer> </footer>
+  <footer> </footer>
 </body>
+
 </html>
