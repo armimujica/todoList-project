@@ -11,3 +11,7 @@ Needed elements:
 - Label ?
 - Submit Button
 - Input type to submit "Add button" or  button
+
+
+Todo's:
+- Make website responsive
