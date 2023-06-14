@@ -41,28 +41,57 @@
   </nav>
   <main>
 
+
+
     <div class="container">
+<!-- FORM -->
 
-      <form class="inputContainer">
-        <label for="input">To do's</label>
-        <br>
-        <input type="text" name="title" id="book-title" placeholder="What do you have in mind?" />
-        <button>Add</button>
-      </form>
+<form class="form-inline ">
+  <div class="form-group mx-sm-3 mb-2 ">
+    <input type="toDos" class="form-control  " id="toDosInput" placeholder="Add your To Do's here...">
+  </div>
+  <div class="submitButton">
+    <button type="submit" class="btn btn-success ">Add</button>
+  </div>
+  
+  
+</form>
 
+      <!-- RESULTS CONTAINER AND FUNBUTTONS -->
+<div class="resultsContainer">
+
+  <section class="section_form">
+    <form id="consultation-form" class="feed-form" action="#">
+      <input required="" placeholder="task number 1" type="text">
+      <input name="phone" required="" placeholder="task number 2">
+      <input name="email" required="" placeholder="task number 3" type="email">
+      
+    </form>
+  </section>
+
+
+<div class="taskButtons">
+  <ul class="funButtons">
+    <li class="icon edit">
+      <span class="tooltip">Edit</span>
+      <span><i class="edit"></i></span>
+    </li>
+    <li class="icon delete">
+      <span class="tooltip">Delete</span>
+      <span><i class="edit"></i></span>
+    </li>
+  </ul>
+</div>
+  
+
+
+</div>
       <!-- FUN BUTTONS  -->
-      <ul class="funButtons">
-        <li class="icon edit">
-          <span class="tooltip">Edit</span>
-          <span><i class="edit"></i></span>
-        </li>
-        <li class="icon delete">
-          <span class="tooltip">Delete</span>
-          <span><i class="edit"></i></span>
-        </li>
-
-      </ul>
+      
 <!-- FUN BUTTONS  -->
+</div>
+
+<!-- CHECKBOX -->
 
     </div>
 <!-- ENDOF PARENT CONTAINER  -->
