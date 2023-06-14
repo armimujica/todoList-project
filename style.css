@@ -1,135 +1,129 @@
-
-* {
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-    
+ {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    width:100%;
+  width: 100%;
 }
 .bgk-body {
-    position: absolute;
-    min-height: 100%;
-    width: 100%;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
 }
 .logoContainer {
-    font-family:'Lobster', cursive; 
-    font-size: 30px;
-    position:absolute;
-    left: 7%;
- }
-
- nav {
-   
-    position: relative;
-    font-family:  sans-serif;
-    text-decoration: none;
-    flex-direction: row;
-    
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+  position: absolute;
+  left: 7%;
 }
 
-/*MAIN CONTAINER STYLE */
+nav {
+  position: relative;
+  font-family: sans-serif;
+  text-decoration: none;
+  flex-direction: row;
+}
+
+/* /MAIN CONTAINER STYLE/ */
 
 .container {
-     background-color: antiquewhite;
-     width: 40%;
-     min-width: 450px;
-     position:absolute;
-     transform: translate(-50%, -50%);
-     top:50%;
-     left: 50%;
-     border-radius: 10px;
-     min-height: 100px;
+  background-color: antiquewhite;
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  min-height: 100px;
 }
 
-/*BUTTONS */
+/* /BUTTONS/ */
 
 .wrapper {
-    display: inline-flex;
-    list-style: none;
-    height: 120px;
-    width: 100%;
-    padding-top: 40px;
-    font-family: "Poppins", sans-serif;
-    justify-content: center;
-  }
-  
-  .wrapper .icon {
-    position: relative;
-    background: #fff;
-    border-radius: 50%;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .tooltip {
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    background: #fff;
-    color: #fff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #fff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .icon:hover .tooltip {
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  .wrapper .edit:hover,
-  .wrapper .edit:hover .tooltip,
-  .wrapper .edit:hover .tooltip::before {
-    background: #f2a918;
-    color: #fff;
-  }
-  
-  .wrapper .delete:hover,
-  .wrapper .delete:hover .tooltip,
-  .wrapper .delete:hover .tooltip::before {
-    background: #ef3a3a;
-    color: #fff;
-  }
-  
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
 
-  /*BUTTONS */
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 
-  /*FORFM*/
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 
-  #input{
-    text-align: center;
-    color: red;
-  }
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .edit:hover,
+.wrapper .edit:hover .tooltip,
+.wrapper .edit:hover .tooltip::before {
+  background: #f2a918;
+  color: #fff;
+}
+
+.wrapper .delete:hover,
+.wrapper .delete:hover .tooltip,
+.wrapper .delete:hover .tooltip::before {
+  background: #ef3a3a;
+  color: #fff;
+}
+
+/* /BUTTONS/ */
+
+/* /FORFM/ */
+
+#input {
+  text-align: center;
+  color: red;
+}
