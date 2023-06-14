@@ -5,21 +5,18 @@
     
 }
 body {
-    height:100%
-    background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    
+    width:100%;
 }
 .bgk-body {
     position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
+    min-height: 100%;
+    width: 100%;
 }
 .logoContainer {
     font-family:'Lobster', cursive; 
     font-size: 30px;
     position:absolute;
-    left: 37%;
+    left: 7%;
  }
 
  nav {
@@ -27,6 +24,7 @@ body {
     position: relative;
     font-family:  sans-serif;
     text-decoration: none;
+    flex-direction: row;
     
 }
 
