@@ -4,7 +4,6 @@
     box-sizing: border-box;
     
 }
-
 body {
     height:100%
     background: rgb(238,174,202);
@@ -16,6 +15,22 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+.logoContainer {
+    font-family:'Lobster', cursive; 
+    font-size: 30px;
+    position:absolute;
+    left: 37%;
+ }
+
+ nav {
+   
+    position: relative;
+    font-family:  sans-serif;
+    text-decoration: none;
+    
+}
+
+/*MAIN CONTAINER STYLE */
 
 .container {
      background-color: antiquewhite;
@@ -28,6 +43,8 @@ body {
      border-radius: 10px;
      min-height: 100px;
 }
+
+/*BUTTONS */
 
 .wrapper {
     display: inline-flex;
@@ -109,17 +126,11 @@ body {
   }
   
 
+  /*BUTTONS */
 
-.logoContainer {
-   font-family:'Lobster', cursive; 
-   font-size: 30px;
-   position:absolute;
-   left: 37%;
-}
-nav {
-   
-    position: relative;
-    font-family:  sans-serif;
-    text-decoration: none;
-    
-}
+  /*FORFM*/
+
+  #input{
+    text-align: center;
+    color: red;
+  }
