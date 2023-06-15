@@ -1,161 +1,181 @@
-*{
-  padding: 0;margin:0;
+* {
+  padding: 0;
+  margin:0;
   box-sizing: border-box;
 }
 body {
-    width:100%;
+  width:100%;
 }
 .bgk-body {
-    position: absolute;
-    min-height: 100%;
-    width: 100%;
-    z-index:-1;
+z-index: -1;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
 }
 .logoContainer {
-    font-family:'Lobster', cursive;
-    font-size: 30px;
-    position:absolute;
-    left: 7%;
- }
-
- nav {
-
-    position: relative;
-    font-family:  sans-serif;
-    text-decoration: none;
-    flex-direction: row;
-
+  font-family:'Lobster', cursive; 
+  font-size: 30px;
+  position:absolute;
+  left: 7%;
 }
 
-/* /MAIN CONTAINER STYLE/ */
+nav {
+  position: relative;
+  font-family:  sans-serif;
+  text-decoration: none;
+  flex-direction: row;
+  padding-left: 45%;
+}
+
+/*MAIN CONTAINER STYLE */
 
 .container {
-
-     background-color: antiquewhite;
-     height: 60%;
-     position:absolute;
-     transform: translate(-50%, -50%);
-     top:50%;
-     left: 50%;
-     border-radius: 10px;
-
-
-}
-/*TO DO INPUT BOX */
-
-.form-inline {
-  position: relative;
-  text-align: center;
-  justify-content: center;
-  left: 25rem;
-  margin-top: 30px;
-
+   background-color: antiquewhite;
+   min-width: 400px;
+   position:absolute;
+   transform: translate(-50%, -50%);
+   top:50%;
+   left: 50%;
+   border-radius: 10px;
+   min-height: 100px;
 }
 
-.form-group {
-
-  display: flex;
-  width: 15rem;
-  height: 2rem;
+/* input */
+.forms{
+flex-direction: row;
+}
+.inputgroup {
+display: flex;
+justify-content: center;
+padding: 10px;
+border: solid rgb(162, 8, 8);
 }
 
+.input {
+border: solid 2px #ffb9b9;
+border-radius: 10px;
+background: none;
+padding: 1rem;
+font-size: 1rem;
+background-color: #ffb9b97c;
+transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
 
+.user-label {
+position: absolute;
+color: #d69191;
+pointer-events: none;
+transform: translateY(1rem);
+transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.input:focus, input:valid {
+outline: none;
+border: 2px solid #f98b8b;
+}
+
+.input:focus ~ label, input:valid ~ label {
+transform: translateY(-50%) scale(0.8) translateX(-65%);
+background-color: #f98b8b;
+padding: 0 .2em;
+color: #fbe2e2;
+}
 .submitButton{
-  position:relative;
-  left: 16rem;
-  width: 100px;
-  bottom: 2.5rem;
+width: fit-content;
+position:relative;
+left: 23rem;
+bottom: 3.7rem;
 }
-
-.resultsContainer {
-background-color: antiquewhite;
-width: 400px;
-height: 400px;
-margin-left: 385px;
-
-}
-
-
-/* RESULTS CONTAINER FORM TO EDIT!!! ! */
-
+/* TASKS */
 .section_form {
-  display: flex;
-  width: 300px;
-  justify-content: center;
-  align-items: center;
+display: flex;
+width: fit-content;
+border: solid rgb(119, 194, 255);
 }
 .feed-form {
-  margin-top: 36px;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
+margin-top: 36px;
+display: flex;
+flex-direction:column;
+width: 200px;
 }
 
 .feed-form input {
-  height: 54px;
-  border-radius: 5px;
-  background: rgb(255, 255, 255);
-  margin-bottom: 15px;
-  border: none;
-  padding: 0 20px;
-  font-weight: 300;
-  font-size: 14px;
-  color: #4B4B4B;
+height: 54px;
+border-radius: 5px;
+background: rgb(255, 255, 255);
+margin-bottom: 15px;
+border: none;
+padding: 0 20px;
+font-weight: 300;
+font-size: 14px;
+color: #4B4B4B;
 }
 
 .button_submit:hover, .feed-form input:hover {
-  transform: scale(1.009);
-  box-shadow: 0px 0px 3px 0px #212529;
+transform: scale(1.009);
+box-shadow: 0px 0px 3px 0px #212529;
+}
+/* CHECKBOXES */
+.checkboxcontainer {
+cursor: pointer;
 }
 
-/* /BUTTONS/ */
-
-.btn{
-  width: 90px;
-  height: 30px;
-  background-color: #f2a918;
+.checkboxcontainer input {
+display: none;
 }
 
-
-.taskButtons{
-  display: flex;
-
-  width: 200px;
-  position:relative;
-  justify-content:flex-end;
-  left: 11rem;
-
+.checkboxcontainer svg {
+overflow: visible;
 }
 
+.path {
+fill: none;
+stroke: white;
+stroke-width: 6;
+stroke-linecap: round;
+stroke-linejoin: round;
+transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+stroke-dasharray: 241 9999999;
+stroke-dashoffset: 0;
+}
 
-.funButtons {
+/*BUTTONS */
+.entry{
+align-items: center;
+justify-content: center;
+flex-direction: row;
+width: fit-content;
+border: solid rgb(16, 187, 0);
+}
+.checkboxcontainer input:checked ~ svg .path {
+stroke-dasharray: 70.5096664428711 9999999;
+stroke-dashoffset: -262.2723388671875;
+}
 
+.wrapper {
   display: inline-flex;
   list-style: none;
-  height: 120px;
-  width: 100%;
   font-family: "Poppins", sans-serif;
-  justify-content: end;
-
 }
 
-.funButtons .icon {
+.wrapper .icon {
   position: relative;
   background: #fff;
-  border-radius: 50%;
-  margin: 10px;
-  width: 20px;
-  height: 20px;
-  font-size: 14px;
+  border-radius: 55%;
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.funButtons .tooltip {
+
+
+.wrapper .tooltip {
   position: absolute;
   top: 0;
   font-size: 14px;
@@ -169,7 +189,7 @@ margin-left: 385px;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.funButtons .tooltip::before {
+.wrapper .tooltip::before {
   position: absolute;
   content: "";
   height: 8px;
@@ -181,45 +201,32 @@ margin-left: 385px;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.funButtons .icon:hover .tooltip {
+.wrapper .icon:hover .tooltip {
   top: -45px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
-.funButtons .icon:hover span,
-.funButtons .icon:hover .tooltip {
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.funButtons .edit:hover,
-.funButtons .edit:hover .tooltip,
-.funButtons .edit:hover .tooltip::before {
+.wrapper .edit:hover,
+.wrapper .edit:hover .tooltip,
+.wrapper .edit:hover .tooltip::before {
   background: #f2a918;
   color: #fff;
 }
 
-.funButtons .delete:hover,
-.funButtons .delete:hover .tooltip,
-.funButtons .delete:hover .tooltip::before {
+.wrapper .delete:hover,
+.wrapper .delete:hover .tooltip,
+.wrapper .delete:hover .tooltip::before {
   background: #ef3a3a;
   color: #fff;
 }
 
 
-/* /FUN BUTTONS/ */
-}
+/*BUTTONS */
 
-.completed{
-  text-decoration: line-through;
-}
-
-
-/* /BUTTONS/ */
-
-.
-
-  /* /FUN BUTTONS/ */
-
-  /* /FORFM/ */
