@@ -1,12 +1,39 @@
 * {
+
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+  }
+
   padding: 0;
   margin:0;
   box-sizing: border-box;
 }
+
 body {
   width:100%;
 }
 .bgk-body {
+
+ z-index: -1;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}
+.logoContainer {
+    font-family:'Lobster', cursive; 
+    font-size: 30px;
+    position:absolute;
+    left: 7%;
+ }
+
+ nav {
+    position: relative;
+    font-family:  sans-serif;
+    text-decoration: none;
+    flex-direction: row;
+    padding-left: 45%;
+
 z-index: -1;
   position: absolute;
   min-height: 100%;
@@ -25,11 +52,22 @@ nav {
   text-decoration: none;
   flex-direction: row;
   padding-left: 45%;
+
 }
 
 /*MAIN CONTAINER STYLE */
 
 .container {
+
+     background-color: antiquewhite;
+     min-width: 400px;
+     position:absolute;
+     transform: translate(-50%, -50%);
+     top:50%;
+     left: 50%;
+     border-radius: 10px;
+     min-height: 100px;
+
   display: flex;
   flex-direction: column;
    background-color: antiquewhite;
@@ -57,6 +95,7 @@ border-bottom: solid #ffb9b97c 2px;
 .form-inline{
   display: flex;
   flex-direction: row;
+
 }
 /* .form-control {
 border: solid 2px #ffb9b9;
@@ -67,6 +106,101 @@ font-size: 1rem;
 background-color: #ffb9b97c;
 transition: border 150ms cubic-bezier(0.4,0,0.2,1);
 } */
+
+/* input */
+
+.inputgroup {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: solid red;
+}
+
+ .input {
+  border: solid 2px #ffb9b9;
+  border-radius: 10px;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #ffb9b97c;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+ 
+ .user-label {
+  position: absolute;
+  color: #d69191;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+ 
+ .input:focus, input:valid {
+  outline: none;
+  border: 2px solid #f98b8b;
+ }
+ 
+ .input:focus ~ label, input:valid ~ label {
+  transform: translateY(-50%) scale(0.8) translateX(-65%);
+  background-color: #f98b8b;
+  padding: 0 .2em;
+  color: #fbe2e2;
+ }
+
+
+ /* CHECKBOXES */
+ .checkboxcontainer {
+  cursor: pointer;
+}
+
+.checkboxcontainer input {
+  display: none;
+}
+
+.checkboxcontainer svg {
+  overflow: visible;
+}
+
+.path {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+/*BUTTONS */
+.entry{
+  /* visibility: hidden; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: solid red;
+}
+.checkboxcontainer input:checked ~ svg .path {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 55%;
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 /* .user-label {
 position: absolute;
@@ -121,13 +255,47 @@ input[type="text"] {
     font-size: 18px;
     display: flex;
     transform: translateY(-4px);
+
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
+
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+
   .btn:hover{
     top: -2px !important;
+
     pointer-events: auto;
     background: #f2a918;
     color: #fff;
@@ -266,3 +434,4 @@ stroke-dashoffset: -262.2723388671875;
 } */
 
 /*BUTTONS */
+
