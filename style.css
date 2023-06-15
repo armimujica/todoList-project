@@ -218,8 +218,46 @@ margin-left: 385px;
 
 /* /BUTTONS/ */
 
-.
+
 
   /* /FUN BUTTONS/ */
 
   /* /FORFM/ */
+
+  /*checkbox*/
+  
+   /* Add styling for delete, edit, and checkbox */
+
+
+   .checkbox {
+       margin: 0 0.5rem;
+   }
+  
+   .delete-button {
+    margin: 0 0.5rem;
+    padding: 0 0.5rem ;
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+   }
+  
+   .edit-button {
+    margin: 0 0.5rem;
+    padding: 0 0.5rem ;
+    background-color: green;
+    color: white;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+ /* Add spacing between tasks */
+ .task-item {
+  margin-bottom: 2rem;
+}
