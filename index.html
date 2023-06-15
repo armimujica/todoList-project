@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora&family=Nanum+Gothic&family=Playfair+Display:ital@1&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 <body>
    
-     
+    <img class="bgk-body" src="./img/bgk-body.png" alt="">
     <nav>
         <div class="logoContainer">
             <p class="logo">To Do's </p>
@@ -59,22 +59,61 @@
   <div class="hoverEffect">
   <div>
   </div>
-  </div></button>
-            
+  </div></button>     
             <ul class="wrapper">
+
+<div class="inputgroup ">
+  <form id="taskform" class="form-inline ">
+    <div class="form-group mx-sm-3 mb-2 ">
+      <input type="text" class="form-control" placeholder="Add your To Do's here...">
+    </div>
+    <div class="submitButton">
+      <button type="submit" class="btn" >Add</button>
+    </div>
+  </form>
+</div>
+<div class="resultsContainer">
+  <ul id="taskList">
+
+  </ul>
+
+<div class="taskButtons">
+  <ul class="funButtons">
+
     <li class="icon edit">
-        <span class="tooltip">Edit</span>
-        <span><i class="edit"></i></span>
+      <span class="tooltip">Edit</span>
+      <span><i class="edit"></i></span>
     </li>
     <li class="icon delete">
-        <span class="tooltip">Delete</span>
-        <span><i class="edit"></i></span>
+      <span class="tooltip">Delete</span>
+      <span><i class="edit"></i></span>
     </li>
+
 </ul>
         </div>
         </div>
-    </main>
+=======
+  </ul>
+</div>
+  <div class="forms">
+  <div class="resultsContainer">
+    <ul class="todoList"></ul>
+    </div>
+  </div>
+  <!-- <div class="entry"> -->
+<!-- checkboxes -->
+<!-- <label class="checkboxcontainer">
+    <input type="checkbox">
+    <svg viewBox="0 0 64 64" height="2em" width="2em">
+      <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+    </svg>
+  </label> -->
+</div>
+        </div>
+        </div>
 
+    </main>
+<script src="script.js"></script>
     <footer> </footer>
 </body>
 </html>
