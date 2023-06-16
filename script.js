@@ -47,13 +47,22 @@ taskform.addEventListener("submit", function(event) {
         }
 
         // Create checkbox element for toggling task completion
-        var checkbox = document.createElement("input");
+       const checkbox = document.createElement("input");
         checkbox.setAttribute("type", "checkbox");
         checkbox.checked = task.completed;
         checkbox.addEventListener("change", function() {
             toggleTaskCompletion(index);
         });
         checkbox.classList.add("checkbox");
+
+        // Create text element for displaying task text
+        const taskText = document.createElement("span");
+        taskText.innerText = task.text;
+
+        // Add completed class if task is marked as completed
+        if (task.completed) {
+        listItem.classList.add("completed");
+        }
 
         // Create edit button for editing task
         var editButton = document.createElement("button");
