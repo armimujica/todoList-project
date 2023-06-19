@@ -172,6 +172,46 @@ input[type="text"] {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+.sortByCompletion-button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  color: #d69191;
+  border-radius: 55%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sortByName-button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  color: #d69191;
+  border-radius: 55%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
 .delete-button:hover{
   top: -2px;
   pointer-events: auto;
@@ -188,6 +228,32 @@ li {
 input[type='checkbox'] {
   accent-color: #ffb9b9;
 border: solid red 10px;
+}
+
+.completed {
+  color:green;
+  opacity: 0.4;
+}
+
+.task-priority {
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.high-priority {
+  background-color: red;
+  color: white;
+}
+
+.medium-priority {
+  background-color: orange;
+  color: black;
+}
+
+.low-priority {
+  background-color: green;
+  color: white;
 }
 
 /* .submitButton{
